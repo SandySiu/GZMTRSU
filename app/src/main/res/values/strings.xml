@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">广州地铁运营资讯</string>
+    <string name="title_home">运营资讯</string>
+    <string name="title_dashboard">客流实况</string>
+    <string name="title_notifications">历史客流</string>
+    <string name="toolbar_settings">设置</string>
+    <string name="toolbar_about">关于</string>
+</resources>
