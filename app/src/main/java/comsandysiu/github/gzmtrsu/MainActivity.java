@@ -1,5 +1,7 @@
 package comsandysiu.github.gzmtrsu;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -37,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                                 fragment = new InformationFragment();
                                 break;
                             case R.id.navigation_dashboard:
-                                fragment = new LiveFragment();
+                                openBrowser();
                                 break;
                             case R.id.navigation_notifications:
                                 fragment = new RecentFragment();
@@ -48,6 +50,12 @@ public class MainActivity extends AppCompatActivity {
                         return true;
                     }
                 });
+    }
+
+    private void openBrowser(){
+        Uri uri = Uri.parse("http://ydyc.gzmtr.cn:19090/index.html");
+        Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+        startActivity(intent);
     }
 
 }

@@ -5,4 +5,7 @@
     <string name="title_notifications">历史客流</string>
     <string name="toolbar_settings">设置</string>
     <string name="toolbar_about">关于</string>
+    <string name="statue_hint">正常服务</string>
+    <string name="system_hint">全线网</string>
+    <string name="date_hint">02-29</string>
 </resources>
